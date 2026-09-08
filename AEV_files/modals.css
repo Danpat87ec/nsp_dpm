@@ -1,0 +1,79 @@
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); /* Darker background */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffff; /* Pure white background */
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 20px; /* More rounded corners */
+    border: none; /* Remove border */
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out; /* Transition */
+}
+
+/* Modal buttons */
+.button-modal-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-modal{
+    background-color: var(--main);
+    border-radius: 20px; /* More rounded corners */
+    text-align: center;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: var(--questions-background);
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.button-modal:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--main);
+    border: 1px solid var(--main);
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Input fields */
+input[type="text"], input[type="email"]{
+    width: 95%;
+    height: 35px;
+    margin: 10px 0;
+    padding-left: 20px; /* More padding */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 20px; /* More rounded corners */
+    outline: none;
+    transition: all 0.3s ease-in-out; /* Transition */
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: var(--main); /* Change border color on focus */
+    box-shadow: 0 0 5px var(--main); /* Add a subtle shadow on focus */
+}
+
+/* Error text */
+.error{
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: -5px;
+}

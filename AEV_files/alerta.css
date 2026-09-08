@@ -1,0 +1,35 @@
+/* Custom classes for the Swal elements */
+.title-class {
+    color: #589f48;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content-class {
+    color: #589f48;
+    font-size: 1.2em;
+}
+
+.popup-class {
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+.confirm-button-class {
+    background-color: #589f48;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 2px 15px #589f48(246, 139, 50, 0.4);
+    transition: all 0.3s ease;
+}
+
+.confirm-button-class:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px #589f48(246, 139, 50, 0.5);
+}
